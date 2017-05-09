@@ -42,6 +42,7 @@ class SymbolDownloader:
 
     def _fetch(self, insecure):
         params = {
+            'm': 'all',
             'b': text(self.current_q_item_offset),
             's': self.current_q,
             't': self.type[0].upper(),
